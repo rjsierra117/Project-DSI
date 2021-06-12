@@ -1,0 +1,49 @@
+﻿@model IEnumerable<FRENICSA.Models.articulo>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-success" })
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.codigo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.descripcion)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.codigo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.descripcion)
+                </td>
+                <td>
+                    @Html.ActionLink(" ", "Edit", new { id = item.idarticulo }, new { @class = "btn btn-sm btn-info glyphicon glyphicon-pencil" })
+                    @Html.ActionLink(" ", "Details", new { id = item.idarticulo }, new { @class = "btn btn-sm btn-default glyphicon glyphicon glyphicon-new-window" })
+                    @Html.ActionLink(" ", "Delete", new { id = item.idarticulo }, new { @class = "btn btn-sm btn-danger glyphicon glyphicon-trash" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

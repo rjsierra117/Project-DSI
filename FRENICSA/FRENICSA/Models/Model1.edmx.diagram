@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8081af860ad849ffb0ea17019bdc333c" Name="Diagram1">
+        <EntityTypeShape EntityType="empresaModel.articulo" Width="1.5" PointX="6" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="empresaModel.categoria" Width="1.5" PointX="3.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="empresaModel.cliente" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="empresaModel.detalle_ingreso" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="empresaModel.detalle_venta" Width="1.5" PointX="10.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="empresaModel.ingreso" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="empresaModel.presentacion" Width="1.5" PointX="3.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="empresaModel.proveedor" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="empresaModel.trabajador" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="empresaModel.venta" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="empresaModel.FK_articulo_categoria1" ManuallyRouted="false" />
+        <AssociationConnector Association="empresaModel.FK_articulo_presentacion1" ManuallyRouted="false" />
+        <AssociationConnector Association="empresaModel.FK_detalle_ingreso_articulo1" ManuallyRouted="false" />
+        <AssociationConnector Association="empresaModel.FK_VENTA_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="empresaModel.FK_detalle_ingreso_ingreso" ManuallyRouted="false" />
+        <AssociationConnector Association="empresaModel.FK_detalle_ingreso_ingreso1" ManuallyRouted="false" />
+        <AssociationConnector Association="empresaModel.FK_detalle_venta_detalle_ingreso" ManuallyRouted="false" />
+        <AssociationConnector Association="empresaModel.FK_detalle_venta_VENTA" ManuallyRouted="false" />
+        <AssociationConnector Association="empresaModel.FK_ingreso_proveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="empresaModel.FK_ingreso_trabajador" ManuallyRouted="false" />
+        <AssociationConnector Association="empresaModel.FK_VENTA_trabajador" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
